@@ -1,0 +1,86 @@
+.hoverSearch{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    .hoverSearch_main{
+        border-radius: 5px;
+        box-shadow: 0 10px 32px rgba(0,0,0,.3), 0 5px 3px rgba(0,0,0,.1);
+        width: 335px;
+
+        .hoverSearch_input{
+            width: 100%;
+            text-indent: 30px;
+            font-size: 16px;
+            height: 40px;
+            background-image: url('../../assests/svg/search-black.svg');
+            background-repeat: no-repeat;
+            background-size: 16px;
+            background-position: 8px;
+            border: unset;
+            border-bottom: 2px solid #C7CACF;
+            padding: 0;
+        }
+
+        .hoverSearch_input:focus{
+            -webkit-appearance: none;
+            outline: none;
+        }
+
+        .hoverSearch_suggestion_main{
+            width: 100%;
+
+            .hoverSearch_suggestion_container{
+                max-height: 320px;
+                overflow-x: scroll;
+
+                .single_suggestion{
+                    text-align: initial;                    
+                    padding: 10px;
+                    cursor: pointer;
+
+                    .pan{
+                        margin: 0;
+                        // margin-bottom: 10px;
+                    }
+
+                    p{
+                        margin-top: 2px;
+                        margin-bottom: 5px;
+                    }
+
+                    .name{
+                        font-style: italic;
+                        color: grey;
+                    }
+
+                    .address{
+                        margin-top: 15px;
+                        color: darkgrey;
+
+                    }
+
+                    .highlight_text{
+                        color: #5492EF;
+                        font-weight: 600;
+                    }
+                }
+
+                .single_suggestion:not(:first-child){
+                    border-top: 1px solid #C7CACF;
+                }
+
+                // .single_suggestion:hover{
+                    
+                // }
+
+                .single_suggestion_hover{
+                    background-color: #FFFEDC;
+                }
+
+            }
+        }
+    }
+}
