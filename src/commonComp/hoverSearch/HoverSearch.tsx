@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import './hoverSearch.scss'
 import hoverSearchData from './hoverSearchData'
 
@@ -69,7 +69,7 @@ const HoverSearch: FC = (): JSX.Element => {
         if (childNodes?.length) {
             getElement?.scrollIntoView();
         }
-    }, [currentHoverIndex])
+    }, [currentHoverId])
 
 
     const onMouseEnterHandler = useCallback((index: number, id: string) => {
