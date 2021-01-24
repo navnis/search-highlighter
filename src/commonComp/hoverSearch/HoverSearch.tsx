@@ -75,7 +75,7 @@ const HoverSearch: FC = (): JSX.Element => {
     const onMouseEnterHandler = useCallback((index: number, id: string) => {
         if (currentHoverIndex !== index) {
             setCurrentHoverIndex(index)
-            setCurrentHoverId(id)
+            // setCurrentHovxerId(id)
         }
     }, [currentHoverIndex])
 
